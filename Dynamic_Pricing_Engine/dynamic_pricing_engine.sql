@@ -1,0 +1,10 @@
+create database dynamicprice_db;
+use dynamicprice_db;
+show tables;
+insert into product(name,baseprice)values('Chair',25000);
+select * from product;
+insert into product(name,baseprice)values('Washing-machine',40000);
+insert into product(name,baseprice)values('SmartWatch',30000);
+delete from pricing_rule where id=3;
+select * from pricing_rule;
+Alter table pricing_rule add priority Int;
